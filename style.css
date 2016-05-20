@@ -1,0 +1,254 @@
+html {
+    margin:0;
+    padding:0 no-repeat center fixed;
+    background: url(http://pre02.deviantart.net/4f64/th/pre/i/2013/274/5/c/compo_by_le_greu-d5vg2up.jpg) no-repeat center fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.div-contenu{
+    height: 140px;
+    width: 100%;
+}
+
+#div1{
+    width:39% ;
+    height:140px;
+    background-color:#F0941B;
+    float: left;
+    text-align: center;
+    opacity: 0.7;
+    box-shadow: 1px 1px 12px #555;
+    border-radius: 15px;
+}
+
+#div2{
+    width: 140px;
+    height: 140px;
+    box-shadow: 1px 1px 12px #555;
+    float: left;
+}
+
+.div-corps{
+    height:600px ;
+    width: 100%;
+}
+
+#div3{
+    background-color: #27BFDE;
+    width: 50%;
+    opacity: 0.7;
+    position:relative;
+    right:-540px;
+    box-shadow: 1px 1px 12px #555;
+    border-radius: 15px;
+}
+
+#div4{
+    background-color: #FABA0D;
+    width: 40%;
+    opacity: 0.7;
+    box-shadow: 1px 1px 12px #555;
+    border-radius: 15px;
+}
+
+#div5{
+    background-color: #DF858B;;
+    width: 50%;
+    opacity: 0.7;
+    position:relative;
+    right:-540px;
+    box-shadow: 1px 1px 12px #555;
+    border-radius: 15px;
+}
+
+
+span{
+    font-family: 'Regular';
+    font-size: 18px;
+    font-weight:bold;
+}
+
+em{
+    font-weight:bold;
+}
+
+li{
+    color:#FFFFFF;
+    font-family:sans-serif;
+    font-size:16px;
+}
+
+p{
+    margin-top: 10px;
+    margin-right: 10px;
+    color: #FFFFFF;
+}
+
+h2{
+    margin-top: 10px;
+    margin-left: 10px;
+    color:#FFFFFF;
+    font-family: 'Regular';
+}
+
+h1{
+    color:#FFFFFF;
+    font-family: 'Regular';
+    font-size: 40px;
+}
+
+/*Mouvement de l'image*/
+
+img.zoomEffect {
+    -moz-transition: all 0.5s ease-in-out 0s;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    -o-transition: all 0.5s ease-in-out 0s;
+    -ms-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+    opacity: 0.7;
+}
+img.zoomEffect:hover {
+    -moz-transform: rotate(5deg) scale(1.10);
+    -webkit-transform: rotate(5deg) scale(1.10);
+    -o-transform: rotate(5deg) scale(1.10);
+    -ms-transform: rotate(5deg) scale(1.10);
+    transform: rotate(5deg) scale(1.10);
+    opacity: 1;
+}
+/*Mouvements des div 3,4,et 5*/
+.div{
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+}
+
+.div:hover{
+    -webkit-transform: translate(3em,0);
+    -moz-transform: translate(3em,0);
+    -o-transform: translate(3em,0);
+    -ms-transform: translate(3em,0);
+}
+
+/*gestion de la police d'écriture*/
+
+@font-face {
+    font-family: 'Regular';
+    src: url('KaushanScript-Regular.otf');
+}
+
+.info{
+    font-family: 'Regular';
+    font-size: 20px;
+}
+
+/*COORDONNEES: gère l'apparition des coordonnées dans une div visible qu'au deuxième plan*/
+
+.lb-overlay{
+	width: 0px;
+	height: 0px;
+	position: fixed;
+	overflow: hidden;
+	left: 0px;
+	top: 0px;
+	padding: 0px;
+	z-index: 99;
+	text-align: center;
+
+}
+.lb-overlay > div{
+	position: relative;
+	opacity: 0;
+	width: 550px;
+	margin: 10px auto 0px auto;
+	text-shadow: 0px 1px 1px rgba(255,255,255,0.6);
+	-webkit-transition: opacity 0.3s linear 1.3s;
+	-moz-transition: opacity 0.3s linear 1.3s;
+	-o-transition: opacity 0.3s linear 1.3s;
+	-ms-transition: opacity 0.3s linear 1.3s;
+	transition: opacity 0.3s linear 1.3s;
+}
+
+.lb-overlay div {
+	padding: 0px 20px;
+	width: 200px;
+	height: 60px;
+}
+.lb-overlay div {
+	font-size: 36px;
+	float: left;
+	text-align: right;
+	border-right: 1px solid rgba(27,54,81,0.4);
+}
+
+.lb-overlay div{
+	text-align: left;
+	float: left;
+	width: 260px;
+}
+.lb-overlay a.lb-close{
+	background: #000000;
+	z-index: 1001;
+	color: #fff;
+	position: absolute;
+	top: 43px;
+	left: 50%;
+	font-size: 15px;
+	text-align: center;
+	width: 50px;
+	height: 23px;
+	overflow: hidden;
+	margin-left: -25px;
+	opacity: 0;
+	-webkit-box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+	box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+	-webkit-transition: opacity 0.3s linear 1.2s;
+	-moz-transition: opacity 0.3s linear 1.2s;
+	-o-transition: opacity 0.3s linear 1.2s;
+	-ms-transition: opacity 0.3s linear 1.2s;
+	transition: opacity 0.3s linear 1.2s;
+	text-decoration: none;
+}
+
+.lb-overlay img{
+	max-height: 100%;
+	position: relative;
+	-webkit-box-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+	-moz-box-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+	box-shadow: 0px 2px 7px rgba(0,0,0,0.2);
+	background-image: url(f_trav/ifone.jpg);
+}
+.lb-overlay:target {
+	width: auto;
+	height: auto;
+	bottom: 0px;
+	right: 0px;
+	padding: 80px 100px 120px 100px;
+}
+.lb-overlay:target img {
+	-webkit-animation: scaleDown 1.2s ease-in-out;
+	-moz-animation: scaleDown 1.2s ease-in-out;
+	-o-animation: scaleDown 1.2s ease-in-out;
+	-ms-animation: scaleDown 1.2s ease-in-out;
+	animation: scaleDown 1.2s ease-in-out;
+}
+.lb-overlay:target a.lb-close,
+.lb-overlay:target > div{
+	opacity: 1;
+	filter: alpha(opacity=99);
+}
+
+/*gère l'animation des coordonnées*/
+
+@-webkit-keyframes scaleDown {
+  0% { -webkit-transform: scale(10,10); opacity: 0; }
+  100% { -webkit-transform: scale(1,1); opacity: 1; }
+}
+@-moz-keyframes scaleDown {
+  0% { -moz-transform: scale(10,10); opacity: 0; }
+  100% { -moz-transform: scale(1,1); opacity: 1; }
+}
+
+
